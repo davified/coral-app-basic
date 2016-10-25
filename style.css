@@ -5,6 +5,23 @@
     padding-top: 20%
 }
 
+
+/*@media (max-width: 33.9em) { ... }
+
+@media (max-width: 47.9em) { ... }
+
+@media (max-width: 61.9em) { ... }*/
+
+
+/*// Large devices (desktops, less than 75em)*/
+
+@media (max-width: 61.9em) {
+    .canvas-interactive-wrapper {
+        height: 100vmax;
+        padding-top: 50%
+    }
+}
+
 .canvas-interactive-wrapper canvas {
     position: absolute;
     display: block;
@@ -23,7 +40,6 @@
     display: inline-block;
     padding: 3px 7px;
     border: solid 1px transparent;
-    margin-right: 50px;
     z-index: 1;
     text-decoration: none;
     color: #222;
@@ -49,5 +65,26 @@ body {
     background-color: rgba(255, 255, 255, 0.8)
 }
 
+.navbar-brand {
+    float: none;
+}
 
+.navbar-nav .nav-item {
+    float: none;
+}
+
+.navbar-divider, .navbar-nav .nav-item+.nav-item, .navbar-nav .nav-link+.nav-link {
+    margin-left: 0;
+}
+
+@media (min-width: 34em) {
+    .navbar-brand {
+        float: left;
+    }
+    .navbar-nav .nav-item {
+        float: left;
+    }
+    .navbar-divider, .navbar-nav .nav-item+.nav-item, .navbar-nav .nav-link+.nav-link {
+        margin-left: 1rem;
+    }
 }
